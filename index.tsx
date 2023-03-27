@@ -144,7 +144,7 @@ export default function ScrollPicker({
         }
         sView?.current?.scrollTo({ y: _y });
       }
-      if (selectedIndex === _selectedIndex) {
+      if (selectedIndex === _selectedIndex && props.selectedIndex == _selectedIndex) {
         return;
       }
       // onValueChange
